@@ -1,13 +1,17 @@
 import React from 'react'
-import { ImageBackground, TouchableOpacity, StyleSheet, Text, View, Image } from 'react-native';
+import { ImageBackground, TouchableOpacity, StyleSheet, Text, View } from 'react-native';
+import UndrawTransferMoney from '../images/svg/undraw_transfer_money_rywa.svg';
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = ({ navigation }) => {
     return (
         <ImageBackground
             style={styles.imgBackground}
             resizeMode='cover'
             source={require('../images/background.jpg')}
         >
+            <View style={{alignSelf: 'center'}}>
+                <UndrawTransferMoney width={250} height={350} />
+            </View>
             <TouchableOpacity
                 style={styles.button}
                 onPress={() => navigation.navigate("Menu")}
