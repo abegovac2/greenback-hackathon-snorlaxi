@@ -12,32 +12,30 @@ const ExploreScreen = () => {
             resizeMode='cover'
             source={require('../images/background.jpg')}
         >
-            <View style={styles.inputView}>
-                <TextInput
-                    value={countries[0]}
-                    style={styles.textInput}
-                />
-                <TextInput
-                    value={countries[1]}
-                    style={styles.textInput}
-                />
-                <TextInput
-                    style={styles.numericInput}
-                    keyboardType="numeric"
-                    value={Number(transferValue)}
-                    onChangeText={(v) => setTransferValue(v)}
-                    placeholder='UNESITE IZNOS (BAM)'
-                />
+            <TextInput
+                value={countries[0]}
+                style={styles.textInput}
+            />
+            <TextInput
+                value={countries[1]}
+                style={styles.textInput}
+            />
+            <TextInput
+                style={styles.numericInput}
+                keyboardType="numeric"
+                value={Number(transferValue)}
+                onChangeText={(v) => setTransferValue(v)}
+                placeholder='UNESITE IZNOS (BAM)'
+            />
 
-                <TouchableOpacity
-                    style={styles.button}
-                    onPress={() => navigation.navigate("Menu")}>
-                    <Text style={{ fontWeight: 'bold', fontSize: 20 }}>
-                        PRETRAGA
-                    </Text>
-                    <SearchSvg width={40} height={40} />
-                </TouchableOpacity>
-            </View>
+            <TouchableOpacity
+                style={styles.button}
+                onPress={() => navigation.navigate("Menu")}>
+                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>
+                    PRETRAGA
+                </Text>
+                <SearchSvg width={40} height={40} />
+            </TouchableOpacity>
         </ImageBackground >
     )
 }
@@ -60,7 +58,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#28C0BE',
         backgroundColor: '#fff',
-        borderRadius: 43,
+        borderRadius: 29,
         flexDirection: 'row',
         textAlign: 'center',
         justifyContent: 'space-around'
