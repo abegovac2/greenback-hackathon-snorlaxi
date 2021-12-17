@@ -13,7 +13,7 @@ import TransactionIcon from "../images/svg/product-item-transaction-svgrepo-com.
 import InfoIcon from "../images/svg/info-svgrepo-com.svg";
 import TextIcon from "../images/svg/test-svgrepo-com.svg";
 
-const MenuScreen = ({navigation}) => {
+const MenuScreen = ({ navigation }) => {
   return (
     <ImageBackground
       style={styles.imgBackground}
@@ -22,7 +22,10 @@ const MenuScreen = ({navigation}) => {
     >
       <View>
         <Text style={styles.title}>Menu</Text>
-        <TouchableOpacity style={styles.buttonShape} onPress={() => navigation.navigate("Explore")}>
+        <TouchableOpacity
+          style={styles.buttonShape}
+          onPress={() => navigation.navigate("Explore")}
+        >
           <View style={styles.button}>
             <Text style={styles.buttonText}>Pretraži moguće transakcije</Text>
             <TransactionIcon width={30} height={30} />
@@ -32,14 +35,14 @@ const MenuScreen = ({navigation}) => {
         <TouchableOpacity style={styles.buttonShape}>
           <View style={styles.button}>
             <Text style={styles.buttonText}>Informiši se</Text>
-              <InfoIcon width={30} height={30} />
+            <InfoIcon width={30} height={30} />
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.buttonShape}>
           <View style={styles.button}>
             <Text style={styles.buttonText}>Testiraj svoje znanje</Text>
-              <TextIcon width={30} height={30} />
+            <TextIcon width={30} height={30} />
           </View>
         </TouchableOpacity>
       </View>
@@ -66,7 +69,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     backgroundColor: "white",
     flexDirection: "row",
-    alignItems: "baseline",
+    alignItems: "center",
     justifyContent: "space-between",
   },
   buttonText: {
@@ -81,7 +84,6 @@ const styles = StyleSheet.create({
     paddingBottom: 0,
   },
   title: {
-    position: "relative",
     fontSize: 35,
     padding: "10%",
     paddingBottom: 0,

@@ -1,9 +1,9 @@
 import React from 'react'
-import { StyleSheet, View, Text } from 'react-native'
+import { StyleSheet, View, Text, TouchableOpacity } from 'react-native'
 
-const ResultCard = ({ amount, fee, time }) => {
+const ResultCard = ({ amount, fee, time, showDetails }) => {
     return (
-        <View style={styles.view}>
+        <TouchableOpacity onPress={showDetails} style={styles.view}>
             <View style={styles.viewNested}>
                 <Text>
                     DEU -{'>'} BIH
@@ -18,7 +18,7 @@ const ResultCard = ({ amount, fee, time }) => {
                     <Text style={{ color: '#FB2A61' }}>Vrijeme:</Text> {time}
                 </Text>
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }
 

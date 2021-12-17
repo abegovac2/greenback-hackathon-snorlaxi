@@ -2,7 +2,7 @@ import React from 'react'
 import { ImageBackground, ScrollView, StyleSheet, View, Text } from 'react-native'
 import ResultCard from '../components/ResultCard';
 
-const ResultScreen = () => {
+const ResultScreen = ( { navigation }) => {
     return (
         <ImageBackground
             style={styles.imgBackground}
@@ -14,37 +14,39 @@ const ResultScreen = () => {
                     amount={1000}
                     fee={5}
                     time={"2 Dana"}
+                    showDetails={() => navigation.navigate("TransactionDetalis")}
                 />
                 <ResultCard
                     amount={1000}
                     fee={5}
                     time={"2 Dana"}
+                    showDetails={() => navigation.navigate("TransactionDetalis")}
                 />
                 <ResultCard
                     amount={1000}
                     fee={5}
                     time={"2 Dana"}
+                    showDetails={() => navigation.navigate("TransactionDetalis")}
                 />
                 <ResultCard
                     amount={1000}
                     fee={5}
                     time={"2 Dana"}
+                    showDetails={() => navigation.navigate("TransactionDetalis")}
                 />
                 <ResultCard
                     amount={1000}
                     fee={5}
                     time={"2 Dana"}
+                    showDetails={() => navigation.navigate("TransactionDetalis")}
                 />
                 <ResultCard
                     amount={1000}
                     fee={5}
                     time={"2 Dana"}
+                    showDetails={() => navigation.navigate("TransactionDetalis")}
                 />
-                <ResultCard
-                    amount={1000}
-                    fee={5}
-                    time={"2 Dana"}
-                />
+                
             </ScrollView>
         </ImageBackground>
     )
