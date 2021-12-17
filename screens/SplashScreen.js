@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Image, ImageBackground, StyleSheet } from 'react-native';
 
 const SplashScreen = ({ navigation }) => {
@@ -23,8 +23,8 @@ const SplashScreen = ({ navigation }) => {
             source={require('../images/background.jpg')}
         >
             <Image
-                source={require("../images/logo.png")}
-                style={{ alignSelf: 'center', aspectRatio: 3 / 2 }}
+                source={require("../images/logo.jpg")}
+                style={{ width: 250, height: 250,alignSelf: 'center', borderRadius: 50, borderWidth: 1, borderColor: '#e6e6e6' }}
             />
 
         </ImageBackground>
