@@ -15,10 +15,12 @@ const ExploreScreen = ({ navigation }) => {
             <TextInput
                 value={countries[0]}
                 style={styles.textInput}
+                editable={false}
             />
             <TextInput
                 value={countries[1]}
                 style={styles.textInput}
+                editable={false}
             />
             <TextInput
                 style={styles.numericInput}
@@ -74,7 +76,8 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         fontWeight: 'bold',
         margin: 10,
-        textAlign: 'center'
+        textAlign: 'center',
+        color: '#000'
     },
     numericInput: {
         alignItems: "center",

@@ -18,7 +18,7 @@ const ResultCard = ({ amount, fee, time, showDetails }) => {
                     <Text style={{ color: '#FB2A61' }}>Vrijeme:</Text> {time}
                 </Text>
                 <Text>
-                    <Text style={{ color: '#FB2A61' }}>Ukupan iznos:</Text> {amount*(1-fee/100)}
+                    <Text style={{ color: '#FB2A61' }}>Ukupan iznos:</Text> {Math.round((amount * (1 - fee / 100)) * 100) / 100}
                 </Text>
             </View>
         </TouchableOpacity>
