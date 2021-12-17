@@ -1,6 +1,5 @@
 import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
-import ResultScreen from '../screens/ResultScreen'
 
 const ResultCard = ({ amount, fee, time }) => {
     return (
