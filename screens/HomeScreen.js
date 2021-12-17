@@ -9,14 +9,14 @@ const HomeScreen = ({ navigation }) => {
             resizeMode='cover'
             source={require('../images/background.jpg')}
         >
-            <View style={{alignSelf: 'center'}}>
+            <View style={{ alignSelf: 'center' }}>
                 <UndrawTransferMoney width={250} height={350} />
             </View>
             <TouchableOpacity
                 style={styles.button}
                 onPress={() => navigation.navigate("Menu")}
             >
-                <Text>Započni avanturu</Text>
+                <Text style={{ fontSize: 20 }}>ZAPOČNI</Text>
             </TouchableOpacity>
         </ImageBackground>
     )

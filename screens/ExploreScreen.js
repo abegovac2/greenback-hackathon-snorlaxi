@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { StyleSheet, ImageBackground, TextInput, View, TouchableOpacity, Text } from 'react-native';
 import SearchSvg from '../images/svg/search-svgrepo-com.svg';
 
-const ExploreScreen = ({navigation}) => {
+const ExploreScreen = ({ navigation }) => {
 
     const [countries, setCountries] = useState(["NJEMAČKA", "BOSNA I HERCEGOVINA"]);
     const [transferValue, setTransferValue] = useState(0);
@@ -23,14 +23,13 @@ const ExploreScreen = ({navigation}) => {
             <TextInput
                 style={styles.numericInput}
                 keyboardType="numeric"
-                value={Number(transferValue)}
                 onChangeText={(v) => setTransferValue(v)}
                 placeholder='UNESITE IZNOS (BAM)'
             />
 
             <TouchableOpacity
                 style={styles.button}
-                onPress={() => navigation.navigate("Result")}>
+                onPress={() => navigation.navigate("Result", { transferValue: transferValue ? transferValue : 0 })}>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>
                     PRETRAGA
                 </Text>

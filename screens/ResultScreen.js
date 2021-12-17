@@ -2,7 +2,9 @@ import React from 'react'
 import { ImageBackground, ScrollView, StyleSheet, View, Text } from 'react-native'
 import ResultCard from '../components/ResultCard';
 
-const ResultScreen = ( { navigation }) => {
+const ResultScreen = ({route, navigation}) => {
+
+    const {transferValue} = route.params;
     return (
         <ImageBackground
             style={styles.imgBackground}
@@ -11,38 +13,38 @@ const ResultScreen = ( { navigation }) => {
         >
             <ScrollView style={{ width: "100%", marginTop: 100, paddingLeft: 30, paddingRight: 30 }}>
                 <ResultCard
-                    amount={1000}
+                    amount={transferValue}
+                    fee={1}
+                    time={"2 Dana"}
+                    showDetails={() => navigation.navigate("TransactionDetalis")}
+                />
+                <ResultCard
+                    amount={transferValue}
+                    fee={2}
+                    time={"2 Dana"}
+                    showDetails={() => navigation.navigate("TransactionDetalis")}
+                />
+                <ResultCard
+                    amount={transferValue}
+                    fee={3}
+                    time={"2 Dana"}
+                    showDetails={() => navigation.navigate("TransactionDetalis")}
+                />
+                <ResultCard
+                    amount={transferValue}
+                    fee={4}
+                    time={"2 Dana"}
+                    showDetails={() => navigation.navigate("TransactionDetalis")}
+                />
+                <ResultCard
+                    amount={transferValue}
                     fee={5}
                     time={"2 Dana"}
                     showDetails={() => navigation.navigate("TransactionDetalis")}
                 />
                 <ResultCard
-                    amount={1000}
-                    fee={5}
-                    time={"2 Dana"}
-                    showDetails={() => navigation.navigate("TransactionDetalis")}
-                />
-                <ResultCard
-                    amount={1000}
-                    fee={5}
-                    time={"2 Dana"}
-                    showDetails={() => navigation.navigate("TransactionDetalis")}
-                />
-                <ResultCard
-                    amount={1000}
-                    fee={5}
-                    time={"2 Dana"}
-                    showDetails={() => navigation.navigate("TransactionDetalis")}
-                />
-                <ResultCard
-                    amount={1000}
-                    fee={5}
-                    time={"2 Dana"}
-                    showDetails={() => navigation.navigate("TransactionDetalis")}
-                />
-                <ResultCard
-                    amount={1000}
-                    fee={5}
+                    amount={transferValue}
+                    fee={6}
                     time={"2 Dana"}
                     showDetails={() => navigation.navigate("TransactionDetalis")}
                 />
