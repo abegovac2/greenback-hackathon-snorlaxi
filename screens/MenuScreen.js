@@ -13,7 +13,7 @@ import TransactionIcon from "../images/svg/product-item-transaction-svgrepo-com.
 import InfoIcon from "../images/svg/info-svgrepo-com.svg";
 import TextIcon from "../images/svg/test-svgrepo-com.svg";
 
-const Menu = () => {
+const MenuScreen = ({navigation}) => {
   return (
     <ImageBackground
       style={styles.imgBackground}
@@ -22,7 +22,7 @@ const Menu = () => {
     >
       <View>
         <Text style={styles.title}>Menu</Text>
-        <TouchableOpacity style={styles.buttonShape}>
+        <TouchableOpacity style={styles.buttonShape} onPress={() => navigation.navigate("Explore")}>
           <View style={styles.button}>
             <Text style={styles.buttonText}>Pretraži moguće transakcije</Text>
             <TransactionIcon width={30} height={30} />
@@ -87,4 +87,4 @@ const styles = StyleSheet.create({
     paddingBottom: 0,
   },
 });
-export default Menu;
+export default MenuScreen;
