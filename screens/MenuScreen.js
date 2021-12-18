@@ -39,7 +39,7 @@ const MenuScreen = ({ navigation }) => {
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.buttonShape}>
+        <TouchableOpacity style={styles.buttonShape} onPress={() => navigation.navigate("Quiz")}>
           <View style={styles.button}>
             <Text style={styles.buttonText}>Testiraj svoje znanje</Text>
             <TextIcon width={30} height={30} />
