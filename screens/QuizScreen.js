@@ -20,11 +20,6 @@ const QuizScreen = ({ navigation }) => {
             <ScrollView contentContainerStyle={{ paddingTop: 30, width: "100%" }}>
                 {questions.map(question => <Question key={question.text} question={question} onClickAnswer={onClickAnswer} />)}
             </ScrollView>
-
-            {/* Sredit ovo ljepse da bude */}
-            <Text>
-                {(numOfCorrectAnswers / totalQuestions) * 100} %
-            </Text>
         </ImageBackground>
     )
 }
