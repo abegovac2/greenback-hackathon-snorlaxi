@@ -8,8 +8,9 @@ import MenuScreen from './screens/MenuScreen';
 import ResultScreen from './screens/ResultScreen';
 import SplashScreen from './screens/SplashScreen';
 import TransactionDetailsScreen from './screens/TransactionDetailsScreen';
-import InfoScreen from './screens/TransactionDetailsScreen';
 import QuizScreen from './screens/QuizScreen';
+import InfoScreen from './screens/InfoScreen';
+import AnwserScreen from './screens/AnwserScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,7 @@ export default function App() {
         <Stack.Screen name="TransactionDetalis" component={TransactionDetailsScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Info" component={InfoScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Quiz" component={QuizScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="Anwser" component={AnwserScreen} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

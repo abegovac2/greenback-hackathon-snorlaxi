@@ -7,18 +7,43 @@ import {
   Button,
   Image,
   TouchableOpacity,
+  ScrollView,
 } from "react-native";
 
-import TransactionIcon from "../images/svg/product-item-transaction-svgrepo-com.svg";
+import ArrowRight from "../images/svg/arrow-right-svgrepo-com.svg";
 
 const InfoScreen = ({ navigation }) => {
+  const questions = require("../data/info.json");
   return (
     <ImageBackground
       style={styles.imgBackground}
       resizeMode="cover"
       source={require("../images/background.jpg")}
     >
-
+      <View>
+        <Text style={styles.title}>Dodate informacije</Text>
+      </View>
+      <ScrollView style={styles.scrollViewStyle}>
+        {questions.map((q) => (
+          <View style={styles.question}>
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("Anwser", {
+                  question: q,
+                })
+              }
+              style={styles.buttonShape}
+            >
+              <View style={styles.button}>
+                <Text key={q.id} style={styles.buttonText}>
+                  {q.question}
+                </Text>
+                <ArrowRight width={15} height={15} />
+              </View>
+            </TouchableOpacity>
+          </View>
+        ))}
+      </ScrollView>
     </ImageBackground>
   );
 };
@@ -30,6 +55,35 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: "10%",
   },
-
+  title: {
+    fontSize: 25,
+    padding: "10%",
+    paddingBottom: 0,
+  },
+  scrollViewStyle: {
+    width: "100%",
+    padding: "5%",
+    paddingBottom: 0,
+    marginTop: "5%",
+  },
+  button: {
+    borderRadius: 8,
+    paddingVertical: 14,
+    paddingHorizontal: 10,
+    backgroundColor: "white",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  buttonText: {
+    color: "black",
+    fontWeight: "bold",
+    textTransform: "uppercase",
+    fontSize: 16,
+    textAlign: "left",
+  },
+  question: {
+    margin: "2%",
+  },
 });
 export default InfoScreen;

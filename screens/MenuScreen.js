@@ -32,7 +32,10 @@ const MenuScreen = ({ navigation }) => {
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.buttonShape}>
+        <TouchableOpacity
+          style={styles.buttonShape}
+          onPress={() => navigation.navigate("Info")}
+        >
           <View style={styles.button}>
             <Text style={styles.buttonText}>Informiši se</Text>
             <InfoIcon width={30} height={30} />

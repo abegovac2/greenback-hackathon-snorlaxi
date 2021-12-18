@@ -15,7 +15,8 @@ import ErrorIcon from "../images/svg/error-svgrepo-com.svg";
 import BankIcon from "../images/svg/bank-svgrepo-com.svg";
 import ArrowDownIcon from "../images/svg/arrow-down-svgrepo-com.svg";
 
-const TransactionDetailsScreen = ({ navigation }) => {
+const TransactionDetailsScreen = ({route, navigation }) => {
+  const ttt = route.params;
   const info = {
     bank_name: "Temp Bank",
     selected_ammount: 1000,
@@ -33,10 +34,16 @@ const TransactionDetailsScreen = ({ navigation }) => {
       resizeMode="cover"
       source={require("../images/background.jpg")}
     >
-      <Text style={styles.title}>{info.bank_name}</Text>
+      <Text style={styles.title}>Details</Text>
       <View style={styles.container}>
         <View style={styles.transferInfo} /*slika i bih->njem*/>
-          <BankIcon width={80} height={80} />
+          <View style={{alignContent:"center"}}>
+            <BankIcon width={80} height={80} />
+            <Text style={{ fontSize: 15, paddingTop: "3%", fontSize: 15 }}>
+              {info.bank_name}
+            </Text>
+          </View>
+
           <View style={styles.countryNames}>
             <Text>DEU</Text>
             <ArrowDownIcon width={30} height={30} />
@@ -46,7 +53,9 @@ const TransactionDetailsScreen = ({ navigation }) => {
         <View style={styles.atributeList}>
           <View style={styles.atributes}>
             <Text style={[styles.text, styles.textAtr]}>Količina</Text>
-            <Text style={[styles.text, styles.textVal]}>{info.selected_ammount}</Text>
+            <Text style={[styles.text, styles.textVal]}>
+              {info.selected_ammount}
+            </Text>
           </View>
           <View style={styles.atributes}>
             <Text style={[styles.text, styles.textAtr]}>Naknada(%)</Text>
@@ -58,12 +67,14 @@ const TransactionDetailsScreen = ({ navigation }) => {
           </View>
           <View style={styles.atributes}>
             <Text style={[styles.text, styles.textAtr]}>Ukupna cijena</Text>
-            <Text style={[styles.text, styles.textVal]}>{info.fee_num + info.selected_ammount}</Text>
+            <Text style={[styles.text, styles.textVal]}>
+              {info.fee_num + info.selected_ammount}
+            </Text>
           </View>
           <View style={styles.atributes}>
             <Text style={[styles.text, styles.textAtr]}>Transparentni</Text>
-            <View style={{alignSelf:"center"}}>
-            {info.transparency ? <CheckIcon /> : <ErrorIcon />}
+            <View style={{ alignSelf: "center" }}>
+              {info.transparency ? <CheckIcon /> : <ErrorIcon />}
             </View>
           </View>
           <View style={styles.atributes}>
@@ -76,7 +87,9 @@ const TransactionDetailsScreen = ({ navigation }) => {
           </View>
           <View style={styles.atributes}>
             <Text style={[styles.text, styles.textAtr]}>Nacin preuzimanja</Text>
-            <Text style={[styles.text, styles.textVal]}>{info.pickup_method}</Text>
+            <Text style={[styles.text, styles.textVal]}>
+              {info.pickup_method}
+            </Text>
           </View>
         </View>
       </View>
@@ -119,14 +132,14 @@ const styles = StyleSheet.create({
   countryNames: {
     justifyContent: "center",
   },
-  atributeList:{
-      padding:"5%",
+  atributeList: {
+    padding: "5%",
   },
-  text:{
-    padding: "2%"
+  text: {
+    padding: "2%",
   },
-  textVal:{
-      fontSize: 18
-  }
+  textVal: {
+    fontSize: 18,
+  },
 });
 export default TransactionDetailsScreen;

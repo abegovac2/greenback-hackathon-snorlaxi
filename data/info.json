@@ -1,0 +1,61 @@
+[
+    {
+      "id": 1,
+      "question": "Koga ovo zanima?",
+      "anwser": "Zanima bilo koju osoba koja vrši slanje ili primanje novca van zemlje jako je važno da se upozna sa regularnim načinima slanja i primanja novčanih sredstava, radi bržeg, sigurnijeg i jeftinijeg transfera.",
+      "additionalInfo": []
+    },
+    {
+      "id": 2,
+      "question": "Šta je to doznaka?",
+      "anwser": "Doznaka predstavlja uslugu brzog transfera novca iz vlastite države u inostranstvo ili iz inostranstva u vlastitu državu.",
+      "additionalInfo": []
+    },
+    {
+      "id": 3,
+      "question": "Koje su predispozicije za vršenje transfera novca?",
+      "anwser": "Za transfer novca je neophodno imati devizni račun u nekoj od komercijalnih banaka.",
+      "additionalInfo": [
+        {}
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Kako poslati novac?",
+      "anwser": "Za pravilnu uplatu potrebno je razmjeniti neke podatke izmedju pošiljaoca i primaoca. Pošiljalac za uplatu treba da zna: \n-Naziv i adresu banke primaoca \n-Međunarnodnu oznaku banke (SWIFT ili BIC kod) \n-Ime, prezime i adresu primaoca \n-IBAN broj primaoca",
+      "additionalInfo": [
+        {},
+        {}
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Šta sve utiče na troškove slanja novca?",
+      "anwser": "Troškovi novčanih transfera iz inostranstva zavise od više faktora. Uglavnom se, u slučaju banaka, sastoje od sljedećih naknada: naknade koju naplaćuje banka putem koje se šalje novac, naknade koju naplaćuje banka putem koje se prima novac, troškovi konverzije valute (ukoliko se uplaćuje u različitim valutama) i drugi administrativni troškovi banaka.\n Na troškove utiče i da li se koriste usluge korespondentne banke te da li se uplata vrši korištenjem digitalnih finansijskih usluga. U slučaju servisa za slanje novca, naknada obično zavisi od iznosa koji se šalje, ali i zemlje u koju se šalje, tako da postoje različite tarife.",
+      "additionalInfo": []
+    },
+    {
+      "id": 6,
+      "question": "Ko snosi troškove slanja?",
+      "anwser": "Po pitanju snošenja troškova, postoje različite mogućnosti, pa tako pošiljalac određuje putem naloga za plaćanje opcije snošenja troškova. Ponuđene oznake mogu biti:\n-OUR - troškove snosi pošiljalac sredstava\n-SHA - troškove snose i pošiljalac i primalac (podijeljeni troškovi)\n-BEN - sve troškove snosi primalac sredstava",
+      "additionalInfo": []
+    },
+    {
+      "id": 7,
+      "question": "Šta je to korespondentna banka?",
+      "anwser": "Korespondentna banka je strana banka koja za račun Vaše banke u Bosni i Hercegovini obavlja ugovorene poslove u inostranstvu odnosno određenoj državi u svijetu. Prednosti korespondentnog poslovanja su u konačnici brzina transfera i znatno niže provizije za pošiljaoca i primaoca.",
+      "additionalInfo": []
+    },
+    {
+      "id": 8,
+      "question": "Zašto koristiti doznake?",
+      "anwser": "Koštenjem doznaka ste sigurni da će novac koji uplaćujete sigurno i brzo stići primaocu, nakon svake transakcije Vam ostaje dokaz o njenom odvijanju. Te u slučaju greške ili ne dostavljanja novca primaocu dobijate pravo na povrat uplačenog iznosa.",
+      "additionalInfo": []
+    },
+    {
+      "id": 9,
+      "question": "Koji je naš cilj?",
+      "anwser": "Naš cilj je u duhu “Greenback” projekta približiti rad servisa sa doznakama potencijalnim korisnicima ovih usluga, te dati preporuke za najbolje prakse pri vršenju slanja novčanih sredstava. Tačnije mi želimo objediniti sve korake potrebne za vršenje slanja novca u inostranstvo na jedno, svima pristupačno, mjesto, te na što jednostavniji način predstaviti ovaj koristan sistem.",
+      "additionalInfo": []
+    }
+  ]
