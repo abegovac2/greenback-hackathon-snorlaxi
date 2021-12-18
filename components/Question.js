@@ -37,7 +37,7 @@ const Question = ({ question, onClickAnswer }) => {
             <Modal
                 animationType="slide"
                 visible={modalVisible}
-                style={{ marginTop: 500 }}
+                style={{ flex: 1 }}
                 onRequestClose={() => {
                     setModalVisible(!modalVisible);
                 }}>
