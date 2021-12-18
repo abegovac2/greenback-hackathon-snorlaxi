@@ -25,8 +25,8 @@ const InfoScreen = ({ navigation }) => {
       </View>
       <ScrollView style={styles.scrollViewStyle}>
         {questions.map((q) => (
-          <View style={styles.question}>
-            <TouchableOpacity
+          <View key={"v1"+q.id} style={styles.question}>
+            <TouchableOpacity key={"t" +q.id}
               onPress={() =>
                 navigation.navigate("Anwser", {
                   question: q,
@@ -34,11 +34,11 @@ const InfoScreen = ({ navigation }) => {
               }
               style={styles.buttonShape}
             >
-              <View style={styles.button}>
-                <Text key={q.id} style={styles.buttonText}>
+              <View key={"v2" + q.id} style={styles.button}>
+                <Text key={"text" + q.id} style={styles.buttonText}>
                   {q.question}
                 </Text>
-                <ArrowRight width={15} height={15} />
+                <ArrowRight key={"arr" + q.id} width={15} height={15} />
               </View>
             </TouchableOpacity>
           </View>
