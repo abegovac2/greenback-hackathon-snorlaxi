@@ -29,7 +29,7 @@ const InfoScreen = ({ navigation }) => {
             <TouchableOpacity key={"t" +q.id}
               onPress={() =>
                 navigation.navigate("Anwser", {
-                  question: q,
+                  question: q
                 })
               }
               style={styles.buttonShape}

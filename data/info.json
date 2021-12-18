@@ -17,6 +17,7 @@
       "anwser": "Za transfer novca je neophodno imati devizni račun u nekoj od komercijalnih banaka.",
       "additionalInfo": [
         {
+          "id": 1,
           "title": "Kako otvoriti račun?",
           "content": "Za otvaranje računa Vam je potrebna lična karta i CIPS prijava prebivališta, uz potpisivanje ugovora koji će Vam banka ponuditi."
         }
@@ -28,10 +29,12 @@
       "anwser": "Za pravilnu uplatu potrebno je razmjeniti neke podatke izmedju pošiljaoca i primaoca. Pošiljalac za uplatu treba da zna: \n-Naziv i adresu banke primaoca \n-Međunarnodnu oznaku banke (SWIFT ili BIC kod) \n-Ime, prezime i adresu primaoca \n-IBAN broj primaoca",
       "additionalInfo": [
         {
+          "id": 1,
           "title": "Šta je SWIFT i BIC kod?",
           "content": "SWIFT (Society for Worldwide Interbank Financial Telecommunication) ili BIC (Bank Identifier Code)  je standardizirani kod koji služi za autentifikaciju i validaciju internacionalnih uplata. Svaka uplata ima jedinstvenu identifikacijsku šifru banke koja ju je izdala."
         },
         {
+          "id": 2,
           "title": "Šta je IBAN?",
           "content": "IBAN(International Bank Account Number) je jedinstveni identifikacijski broj nekog bankovnog računa koji je prihvaćen kao standard u internacionalnom platnom prometu."
         }

@@ -6,7 +6,6 @@ import HomeScreen from './screens/HomeScreen';
 import ExploreScreen from './screens/ExploreScreen';
 import MenuScreen from './screens/MenuScreen';
 import ResultScreen from './screens/ResultScreen';
-import SplashScreen from './screens/SplashScreen';
 import TransactionDetailsScreen from './screens/TransactionDetailsScreen';
 import QuizScreen from './screens/QuizScreen';
 import InfoScreen from './screens/InfoScreen';
@@ -19,7 +18,6 @@ export default function App() {
     <NavigationContainer>
       {/* TODO: Put Splash as initialRouteName */}
       <Stack.Navigator initialRouteName='Home'>
-        <Stack.Screen name="Splash" component={SplashScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Menu" component={MenuScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Explore" component={ExploreScreen} options={{ headerShown: false }} />

@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+      "text": "Zašto kotristiti doznake?",
+      "answers": [
+        {
+          "text": "Da bi banke mogle opstati",
+          "correct": false
+        },
+        {
+          "text": "Radi sigurnosti i brzine isporuke",
+          "correct": true,
+          "details": "Odgovor 2 je tačan zato što je ovo osnovni i najbitniji razlog za korištenje regulisanih tokova novca."
+        },
+        {
+          "text": "Da bi smanjili promet nedokumentovanog protoka novca",
+          "correct": false
+        }
+      ]
+    },
+    {
+        "id": 2,
+      "text": "Šta je potrebno za transfer novca?",
+      "answers": [
+        {
+          "text": "Državljanstvo",
+          "correct": false
+        },
+        {
+          "text": "Kreditnu karticu",
+          "correct": false
+        },
+        {
+          "text": "Devizni račun",
+          "correct": true,
+          "details": "Odgovor 3 je tacan zato što ukoliko želimo slati novac banka mora znati odakle ćemo ga slati."
+        }
+      ]
+    },
+    {
+        "id": 3,
+      "text": "Šta je IBAN?",
+      "answers": [
+        {
+          "text": "International Banking Associatie Norm",
+          "correct": false
+        },
+        {
+          "text": "International Bank Account Number",
+          "correct": true,
+          "details": "Odgovor 2 je tačan jer prema dokumentacji na oificjalnoj stranici Svjetske banke"
+        },
+        {
+          "text": "Investigation Bank Association of Norway",
+          "correct": false
+        }
+      ]
+    },
+    {
+        "id": 4,
+        "text": "Ko snosi troškove slanja?",
+        "answers": [
+            {
+                "text": "Na volji pošiljaoca",
+                "correct": true,
+                "details": "Odgovor 1 je tačan jer prilikom slanja sredstava pošiljaoc bira tko će da snosi troškove slanja"
+            },
+            {
+                "text": "Pošiljalac",
+                "correct": false
+            },
+            {
+                "text": "Primaoc",
+                "correct": false
+            }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "Šta je to korespondentna banka?",
+        "answers": [
+            {
+                "text": "Banka koja za račun banke pošiljaoca vrši poslove u inostranstvu",
+                "correct": true,
+                "details": "Odgovor 1 je tačan jer je Korespondentna banka je strana banka koja za račun Vaše banke u Bosni i Hercegovini obavlja ugovorene poslove u inostranstvu odnosno određenoj državi u svijetu."
+            },
+            {
+                "text": "Banka pomoću koje šaljemo novac",
+                "correct": false
+            },
+            {
+                "text": "Banka koju koristi primaoc novca",
+                "correct": false
+            }
+        ]
+      }
+
+  ]

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
 import Modal from "react-native-modal";
 
-const Question = ({ question, onClickAnswer }) => {
+const Popup = ({ question, onClickAnswer }) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [primaryActive, setPrimaryActive] = useState(true);
   const [answered, setAnswered] = useState(false);
@@ -36,30 +36,7 @@ const Question = ({ question, onClickAnswer }) => {
   const correctAnswer = question.answers.filter((a) => a.correct);
   return (
     <View style={styles.whyWindow}>
-      <Modal
-        animationType="slide"
-        visible={modalVisible}
-        onRequestClose={() => {
-          setModalVisible(!modalVisible);
-        }}
-      >
-        <View style={styles.modalCont}>
-          <Text style={styles.title}>Tačan odgovor:</Text>
-
-          {
-          correctAnswer.map((ca) => (
-            <Text key={ca.details}>{ca.details}</Text>
-          ))
-          }
-
-          <TouchableOpacity
-            style={styles.back}
-            onPress={() => setModalVisible(false)}
-          >
-            <Text>Zatvori</Text>
-          </TouchableOpacity>
-        </View>
-      </Modal>
+      
       <Text
         style={{
           padding: 20,
@@ -120,4 +97,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Question;
+export default Popup;

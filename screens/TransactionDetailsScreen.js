@@ -9,7 +9,6 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-import TextIcon from "../images/svg/test-svgrepo-com.svg";
 import CheckIcon from "../images/svg/kvakica.svg";
 import ErrorIcon from "../images/svg/error-svgrepo-com.svg";
 import BankIcon from "../images/svg/bank-svgrepo-com.svg";
@@ -22,11 +21,11 @@ const TransactionDetailsScreen = ({route, navigation }) => {
     selected_ammount: 1000,
     fee_proc: 2,
     fee_num: 2,
-    time: "2 days",
+    time: "2 dana",
     transparency: true,
-    notes: "notes",
-    coverage: "coverage",
-    pickup_method: "nogama",
+    notes: "BiH",
+    coverage: "Cijela Bosna",
+    pickup_method: "Poštom",
   };
   return (
     <ImageBackground
